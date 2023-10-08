@@ -8,6 +8,7 @@ def create_app():
     CORS(app)
     app.config['CORS_HEADERS'] = 'Content-Type'
 
+
     from .public import public_bp
     app.register_blueprint(public_bp)
     
